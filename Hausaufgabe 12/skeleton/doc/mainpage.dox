@@ -1,0 +1,66 @@
+// Diese Datei generiert den Doxygen Main-Page
+
+/**
+* \mainpage
+* Diese Dokumentation beschreibt die Aufgaben für die letzte Übung. Gegeben ist die dokumentierte Header-Datei \ref linalg.hpp.
+* Diese Datei enthält die sowohl die Deklarationen für \ref linalg::Vector und \ref linalg::Matrix als auch 
+* die Deklarationen für die abstrakte Basisklassen \ref linalg::VectorLike, \ref linalg::MutableVectorLike, und \ref linalg::TrackedViewable.
+* 
+* Eure Aufgabe ist es, alle nicht-impliementierte Funktionen zu vollständigen, die Bibliothek "liblinalg.a" zu bauen, 
+* und dann das Testprogramm zu kompilieren. Die Erwartete Output dieses Programms ist wie folgt:
+*
+* ```
+* $ ./main.exe input/input.txt 
+* Testing vector + vector:
+*   1 2 3 4 
+* + 0 7 0 1 
+* = 1 9 3 5 
+* Testing vector + vector:
+*   1 2 3 4 
+* - 0 7 0 1 
+* = 1 -5 3 3 
+* 
+* Testing scalar * vector :
+* (2.0) * 1 2 3 4 
+      = 2 4 6 8 
+* 
+* Testing scalar product :
+*    1 2 3 4 
+* .* 0 7 0 1 
+*  = 18
+* Testing VectorView and Destrutors
+* 
+* Testing scalar product (with view!) :
+*    1 2 3 4 
+* .* 2 3 4 5 
+*  = 40
+* Expect Warning Message:
+* Destroying a 'Vector' with 1 views still active!
+* Testing Matrix Operations
+* Matrix 1 is:
+* 1 2 
+* 3 4 
+* Matrix 2 is:
+* 1 0 
+* 0 1 
+* Matrix 3 is:
+* 1 0 
+* 0 1 
+
+* Matrix 3 += Matrix 1 yields is:
+* 2 2 
+* 3 5 
+
+* Matrix 2 - Matrix 1 is:
+* 0 -2 
+* -3 -3 
+
+* Matrix 3 * [3 2]^T is:
+* 10 19 
+
+* Matrix 1 * Matrix 3 is:
+* 8 12 
+* 18 26 
+* ```
+*
+*/

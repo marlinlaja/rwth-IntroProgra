@@ -1,0 +1,6 @@
+// Diese Datei dokumentiert den Namespace "simplegeo".
+
+/**
+* \namespace linalg
+* \brief Namespace für einfache Matrix- und Vektoroperationen.
+*/
